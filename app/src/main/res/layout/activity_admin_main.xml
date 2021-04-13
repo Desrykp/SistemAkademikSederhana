@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".admin.AdminMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:padding="3dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_backgroun6">
+
+        <TextView
+            android:id="@+id/textA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pengalaman adalah Ilmu terbaik yang Semua Orang Cari"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Segera temukan kelas-kelas yang mengisnpirasimu disini"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/textA"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(By : Classico.)"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/textB"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/background_dasar">
+
+        <Button
+            android:id="@+id/btnBuatkelas"
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:text="Buat kelas"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_level"/>
+
+        <Button
+            android:id="@+id/btnTambahmentor"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:text="Tambah Mentor"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_level"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/btnBuatkelas"/>
+
+<!--        <TextView-->
+<!--            android:id="@+id/admin_txt_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerInParent="true"-->
+<!--            tools:text="User sebagai administrator"/>-->
+
+    </RelativeLayout>
+
+</LinearLayout>

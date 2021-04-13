@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.client.loginmultiuserapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ProjekKP"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".admin.Tambah"></activity>
+        <activity android:name=".RuangCerita" />
+        <activity android:name=".RuangLes" />
+        <activity android:name=".RuangVideo" />
+        <activity android:name=".SimpanAbsen" />
+        <activity android:name=".MateriActivity" />
+        <activity android:name=".KosongActivity" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".admin.KelasActivity" />
+        <activity android:name=".admin.BuatKelas" />
+        <activity android:name=".guru.GuruActivity" />
+        <activity android:name=".user.UserMainActivity" />
+        <activity android:name=".admin.AdminMainActivity" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

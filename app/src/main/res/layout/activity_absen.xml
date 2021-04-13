@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:gravity="center"
+    tools:context=".guru.AbsenActivity">
+
+    <EditText
+        android:id="@+id/edittxtEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Email Kamu"
+        android:textColor="@color/black"
+        android:textSize="12sp"/>
+
+    <EditText
+        android:id="@+id/edittxtNamalngkap"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Nama Lengkap"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edittxtTanggalwaktu"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Hari dan Tanggal"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Spinner
+            android:id="@+id/spinerKelasAbsen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints="Kelas"/>
+
+
+        <RadioButton
+            android:id="@+id/radiobtnHadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hadir"/>
+
+        <RadioButton
+            android:id="@+id/radiobtnIzin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Izin"/>
+
+        <RadioButton
+            android:id="@+id/radiobtnAlpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alpa"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSimpanAbsen"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_keluar"
+        android:text="Simpan"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+</LinearLayout>

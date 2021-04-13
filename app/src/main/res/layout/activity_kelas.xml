@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:padding="3dp"
+    android:orientation="vertical"
+    android:background="@color/bacground"
+    tools:context=".admin.KelasActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ly_ruangKelasA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/card_backgroun2">
+
+            <RelativeLayout
+                android:id="@+id/rl_ruangKelasA"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/card_backgroun4">
+
+                <TextView
+                    android:id="@+id/tv_ruangA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RUANG"
+                    android:textColor="#555151"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="RelativeOverlap" />
+
+                <TextView
+                    android:id="@+id/tv_kelasA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KELAS"
+                    android:textColor="#FF4E16"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="5dp"
+                    tools:ignore="RelativeOverlap" />
+
+                <SearchView
+                    android:id="@+id/searchViewA"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="Search in Here"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_below="@id/tv_kelasA"
+                    android:background="@drawable/card_backgroun2">
+
+                </SearchView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasAadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelaswebA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Web Developer"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorweb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelaswebA"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_webDevelop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/webdevelop"
+                            android:contentDescription="img_webdeveloper"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasBadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasAndro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Android Developer"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorAndro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasAndro"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androDevelop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/andev"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasCadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasUiux"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="UI / UX"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorUiux"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasUiux"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androUiux"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/uiux"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasDadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasCc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Content Creator"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorCc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasCc"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androCc"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/contenreator"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasEadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasEditor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Editor"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorEditor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasEditor"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androEditor"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/editor"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasFadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasYou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Youtuber"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorYou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasYou"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androYou"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/youtuber"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/kelasGadmin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="95dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardBackgroundColor="#B5BEF1"
+                    app:cardUseCompatPadding="true"
+                    android:layout_marginTop="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_kelasBlog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="Blogger"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/tv_namaMentorBlog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginStart="80dp"
+                        android:hint="No Name "
+                        android:textSize="17sp"
+                        android:textColor="@color/white"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cdv_kelasBlog"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="55dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="7dp">
+
+                        <ImageView
+                            android:id="@+id/img_androBlog"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/blogger"/>
+
+                    </androidx.cardview.widget.CardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
